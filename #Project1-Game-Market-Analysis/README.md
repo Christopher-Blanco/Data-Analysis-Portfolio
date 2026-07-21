@@ -118,3 +118,16 @@ An aggregate analysis of global sales reveals a clear dominance of the **Shooter
 
 > 🔍 **Transition Note:** Although the global landscape shows a clear preference for action and shooting games, this order is not absolute. When segmenting this data regionally in subsequent analyses, it will become clear how cultural factors drastically alter consumer preferences (for example, the prominence of RPGs in Asian markets).
 >
+### 🏆 Top 10 Publishers by Global Sales (Units Sold)
+
+*Who dominates the market, and how concentrated is publisher revenue?*
+<img width="1332" height="722" alt="2" src="https://github.com/user-attachments/assets/29a34eb8-a744-4526-99d5-4217cc009466" />
+
+This analysis identifies the market leaders and validates the findings of the genre report, demonstrating that companies with recurring franchises or titles with high replay value dominate the industry’s revenue.
+
+### **Key Insights:**
+
+- **The Consistency of the Subscription and Annual Release Model:** **Activision** (334.32M) and **Electronic Arts** (330.73M) lead the global market in a virtual tie. Activision’s success is driven by the annual release of *Call of Duty* combined with the exploitation of nostalgia and replay value of classic IPs such as *Crash Bandicoot*. For its part, EA replicates this success through high-fidelity sports simulators and massive franchises (such as the *F1* and *Madden NFL* series), complemented by large-scale shooters like *Battlefield* and long-cycle life simulators like *The Sims*.
+- **The Impact of Data Fragmentation (EA vs. EA Sports):** A critical finding in the data structure is the separation of *Electronic Arts* and *EA Sports* (165.84M) as independent entities. From a business perspective, if we consolidate both brands under EA’s corporate umbrella, their combined sales volume would total **496.57M**, positioning the company as the undisputed global market leader by a wide margin.
+- **Quality and Longevity Over Quantity (Rockstar Games):** Ranked third with 190.27M, **Rockstar Games** demonstrates a strategy that runs counter to annualization. Its model is based on releasing massive content titles with hundreds of hours of gameplay (*Grand Theft Auto*, *Red Dead Redemption*) and extending their commercial lifecycle across multiple console generations through remasters and ongoing support for their online modes.
+- **Regional Diversity and Established Niches:** The Top 10 also highlights the strong presence of traditional Asian giants such as **Konami** (90.01M) and **Capcom** (89.18M), which have maintained their global relevance over the decades by preserving and modernizing historic franchises.
