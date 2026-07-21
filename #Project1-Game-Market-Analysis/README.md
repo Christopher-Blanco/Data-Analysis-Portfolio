@@ -106,4 +106,15 @@ Below is the general overview of the developed dashboard. This interactive repor
 ### 📌 Global Sales Analysis by Gender
 
 *A snapshot of global sales segmented by gender.*
-!Screenshot 2026-05-27 182758.png
+<img width="1336" height="719" alt="1" src="https://github.com/user-attachments/assets/8064ac98-f913-41ff-861f-e7e136720292" />
+
+An aggregate analysis of global sales reveals a clear dominance of the **Shooter** and **Action** genres as the primary financial drivers of the film and interactive video game industries.
+
+### **Key Insights:**
+
+- **Dominance of the Annual Release Model (Shooters):** The *Shooter* genre leads the global market with over 611 million units sold. This phenomenon is strongly driven by franchises with high release frequency and brand loyalty, such as *Call of Duty* (Activision), whose strategy of sustained annual releases since 2005 maintains a steady revenue stream.
+- **Longevity and Long-Term Monetization (Action):** The *Action* genre (535.4M) holds a firm second place. Unlike annual releases, this sector stands out for the longevity of mega-hits such as *Grand Theft Auto V* and *Red Dead Redemption* (Rockstar Games). These titles demonstrate the success of the strategy of intergenerational “remasters” (e.g., from PS3 to PS4/PS5), technical optimizations (loading screens, graphical enhancements), and the robustness of their multiplayer components, which keep the games relevant and profitable for years.
+- **Market Concentration:** The top four genres (*Shooter*, *Action*, *Sports*, and *Role-Playing*) account for the vast majority of global sales, leaving niche games (such as *Strategy*, *Music*, or *MMO*) with a marginal share.
+
+> 🔍 **Transition Note:** Although the global landscape shows a clear preference for action and shooting games, this order is not absolute. When segmenting this data regionally in subsequent analyses, it will become clear how cultural factors drastically alter consumer preferences (for example, the prominence of RPGs in Asian markets).
+>
