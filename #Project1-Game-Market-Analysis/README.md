@@ -99,4 +99,4 @@ Below is the general overview of the developed dashboard. This interactive repor
     - **Global Sales Distribution by Region:** A donut chart highlighting the weight of each major market.
     - **Historical Sales Trends:** A stacked column chart that visually maps the industry's growth and contraction from 1980 to 2020.
     - **Genre and Console Rankings:** Clustered bar charts identifying the historical leaders in platform sales and cultural genre preferences.
-    - !dashboard.png
+<img width="1119" height="629" alt="dashboard" src="https://github.com/user-attachments/assets/8d713d41-37cc-432a-a2d1-a4a94e028ae2" />
