@@ -1,4 +1,4 @@
-🎮 Global Video Game Market Analysis (1980–2020)
+## 🎮 Global Video Game Market Analysis (1980–2020)
 ## Project overview
 
 Exploratory analysis and data visualization of the video game industry’s evolution across four decades (1980–2020). The goal is to go beyond raw sales and highlight the cultural, economic, and technological forces that shaped consumer demand across regions.
