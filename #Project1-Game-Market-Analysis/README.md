@@ -101,7 +101,7 @@ Below is the general overview of the developed dashboard. This interactive repor
     - **Genre and Console Rankings:** Clustered bar charts identifying the historical leaders in platform sales and cultural genre preferences.
 <img width="1119" height="629" alt="dashboard" src="https://github.com/user-attachments/assets/8d713d41-37cc-432a-a2d1-a4a94e028ae2" />
 
-  ### Project Analysis: “Game Market”
+ ---
 
 ### 📌 Global Sales Analysis by Gender
 
@@ -118,6 +118,7 @@ An aggregate analysis of global sales reveals a clear dominance of the **Shooter
 
 > 🔍 **Transition Note:** Although the global landscape shows a clear preference for action and shooting games, this order is not absolute. When segmenting this data regionally in subsequent analyses, it will become clear how cultural factors drastically alter consumer preferences (for example, the prominence of RPGs in Asian markets).
 >
+> ---
 ### 🏆 Top 10 Publishers by Global Sales (Units Sold)
 
 *Who dominates the market, and how concentrated is publisher revenue?*
