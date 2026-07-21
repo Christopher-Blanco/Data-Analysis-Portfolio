@@ -106,3 +106,4 @@ Below is the general overview of the developed dashboard. This interactive repor
 ### 📌 Global Sales Analysis by Gender
 
 *A snapshot of global sales segmented by gender.*
+!Screenshot 2026-05-27 182758.png
