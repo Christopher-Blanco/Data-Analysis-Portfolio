@@ -103,9 +103,9 @@ Below is the general overview of the developed dashboard. This interactive repor
 
  ---
 
-### 📌 Global Sales Analysis by Gender
+### 📌 Global Sales Analysis by Genre
 
-*A snapshot of global sales segmented by gender.*
+*A snapshot of global sales segmented by genre.*
 <img width="1336" height="719" alt="1" src="https://github.com/user-attachments/assets/8064ac98-f913-41ff-861f-e7e136720292" />
 
 An aggregate analysis of global sales reveals a clear dominance of the **Shooter** and **Action** genres as the primary financial drivers of the film and interactive video game industries.
