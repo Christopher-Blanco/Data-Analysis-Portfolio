@@ -146,8 +146,8 @@ The PlayStation Phenomenon in the Americas: The data reflects the enormous brand
 
 ⚠️ Software vs. Hardware: A highly interesting finding in this query is the position of the PS2 (371.6 million games). Historically, the PS2 is the best-selling console of all time in terms of hardware (physical consoles). However, when analyzing only sales of original games, it falls to fourth place behind the PS3, X360, and PS4.
 
+**Note:** This phenomenon can be directly attributed to external market factors at the time, primarily the high rates of piracy the platform suffered globally. Despite millions of active consoles in households, a massive portion of software consumption was not recorded in official legal sales metrics.
 “This phenomenon can be directly attributed to external market factors at the time, primarily the high rates of piracy the platform suffered globally. Despite millions of active consoles in households, a massive portion of software consumption was not recorded in official legal sales metrics.
-“This phenomenon can be directly attributed to external market factors at the time, primarily the high rates of piracy the platform suffered globally. Despite millions of active consoles in households, a massive portion of software consumption was not recorded in official legal sales metrics.”
  ---
  ### 🕹️ Top 10 Best-Selling Video Games (By Platform)
 
