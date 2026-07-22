@@ -132,3 +132,73 @@ This analysis identifies the market leaders and validates the findings of the ge
 - **The Impact of Data Fragmentation (EA vs. EA Sports):** A critical finding in the data structure is the separation of *Electronic Arts* and *EA Sports* (165.84M) as independent entities. From a business perspective, if we consolidate both brands under EA’s corporate umbrella, their combined sales volume would total **496.57M**, positioning the company as the undisputed global market leader by a wide margin.
 - **Quality and Longevity Over Quantity (Rockstar Games):** Ranked third with 190.27M, **Rockstar Games** demonstrates a strategy that runs counter to annualization. Its model is based on releasing massive content titles with hundreds of hours of gameplay (*Grand Theft Auto*, *Red Dead Redemption*) and extending their commercial lifecycle across multiple console generations through remasters and ongoing support for their online modes.
 - **Regional Diversity and Established Niches:** The Top 10 also highlights the strong presence of traditional Asian giants such as **Konami** (90.01M) and **Capcom** (89.18M), which have maintained their global relevance over the decades by preserving and modernizing historic franchises.
+### 🎮 Analysis of Global Software Sales by Console
+---
+*Which consoles led software sales, and what business factors explain the ranking?*
+<img width="1339" height="716" alt="3" src="https://github.com/user-attachments/assets/e03d64c3-9476-4c33-a99b-6cf33589cec3" />
+## **Key Insights and Business Findings:**
+
+The Seventh Generation (PS3 and X360): The PS3 tops the global list with over 570 million game copies sold, closely followed by the Xbox 360 (525.5 million). The PS3’s success was cemented by the strong pull of historically renowned franchises and big-budget (AAA) titles such as Grand Theft Auto, Call of Duty, and critically acclaimed exclusives like the Uncharted, God of War, and The Last of Us series.
+
+The PlayStation Phenomenon in the Americas: The data reflects the enormous brand loyalty that Sony has built in the region. The PS3 inherited a massive fan base thanks to the legacy of its previous classic consoles, making it a platform with sustained and massive demand for titles in popular genres such as action, shooters, and adventure (Crash, Red Dead Redemption, etc.).
+
+🔍 Analysis Note (Unexpected Finding):
+
+⚠️ Software vs. Hardware: A highly interesting finding in this query is the position of the PS2 (371.6 million games). Historically, the PS2 is the best-selling console of all time in terms of hardware (physical consoles). However, when analyzing only sales of original games, it falls to fourth place behind the PS3, X360, and PS4.
+
+This phenomenon can be directly attributed to external market factors at the time, primarily the high rates of piracy the platform suffered globally. Despite millions of active consoles in households, a massive portion of software consumption was not recorded in official legal sales metrics.
+ ---
+ ### 🕹️ Top 10 Best-Selling Video Games (By Platform)
+
+*Which titles lead by console, and what business patterns explain their success?*
+<img width="1337" height="714" alt="4" src="https://github.com/user-attachments/assets/989cb53a-0dea-421e-8f5a-4d0cc8defeb6" />
+### **Key Insights (Business + Market)**
+
+- **“Mega-franchise” multiplatform effect (Rockstar):** *Grand Theft Auto V* leads the ranking thanks to an intergenerational, multiplatform expansion strategy (constant remasters and strong presence on PS3, PS4, and Xbox 360). This approach turns a single product into a long-running sales engine, reducing the need to rely on annual releases.
+- **Brand equity and nostalgia (classics that don’t expire):** *GTA: Vice City* (PS2) shows how strong brand equity can translate into massive sales even on older hardware. Its aesthetics, narrative, and soundtrack (80s setting) created a powerful emotional differentiator that sustained demand over time, especially in key markets like Europe.
+- **Instant FPS pull and the iteration model (Call of Duty):** The heavy presence of *Call of Duty* in the Top 10 confirms FPS as a high-velocity, repeat-consumption genre—driven by competitive communities, frequent release cycles, and a player base that migrates across generations (X360, PS3, PS4).
+- **Cinematic action and open worlds as a long-cycle bet:** The appearance of titles like *Red Dead Redemption 2* reinforces that narrative open-world games can compete at the very top when they combine quality, scale, and cultural conversation (awards, streaming, community), extending their commercial life well beyond launch peak.
+
+“Note: The data shows sales broken down by platform; if grouped by title, GTA V and the Call of Duty series would emerge as the undisputed leaders of all time.”
+---
+### 🗺️ Consumer Preferences: Japan (JP)
+
+*Which genres lead in Japan, and what cultural/business factors explain these preferences?*
+<img width="1338" height="710" alt="5" src="https://github.com/user-attachments/assets/3b1b1684-6570-4618-b55e-54196084794b" />
+### **Key Insights:**
+
+- **The Undisputed King: Role-Playing Games:** Unlike the markets in the Americas and Europe (where action and shooter genres typically dominate the top spot), in Japan the role-playing genre leads with 47.66 million copies sold. This phenomenon is due to the enormous cultural influence of legendary local franchises (such as Pokémon, Dragon Quest, and Final Fantasy), which are deeply rooted in the Japanese consumer’s identity.
+- **The Cultural Contrast of Shooters:** While in the West, shooter games are among the most in-demand products, in Japan they drop sharply to fourth place (22.41 million). The Japanese public has historically prioritized strategy mechanics, character development, and complex narratives over competitive first-person shooter experiences.
+- **The Importance of Portability and Social Interaction:** The Action (39.32 million), Sports (31.35 million), and Fighting (21.05 million) genres maintain strong positions. In Japanese society, personal space at home and daily commute times directly influence the data; hence the immense popularity of games suited for handheld consoles and quick or local face-to-face cooperative play.
+
+> 🔍 **Business Conclusion (Strategy Localization):**
+💡 Business Insight: This analysis demonstrates that the video game industry cannot be approached with a unified global strategy. A publisher or developer attempting to launch a video game in the Japanese market must understand that commercial success depends critically on product localization and tailoring marketing toward Role-Playing and Action experiences, as consumer behavior is diametrically opposed to that of American or European markets.
+> ---
+### 🗺️ Consumer Preferences: North America (NA)
+
+*Which genres dominate North America, and what market and economic forces shape the ranking?*
+<img width="1338" height="717" alt="6" src="https://github.com/user-attachments/assets/4924eff5-d6fa-4378-8c1f-31e2eea6c6fc" />
+### **Key Insights:**
+
+- **The Blockbuster and Action Culture:** In stark contrast to Japan, the North American market is absolutely dominated by the Shooter (301.93 million) and Action (247.20 million) genres. This market trend is directly driven by the massive success of big-budget multiplatform titles focused on online and competitive play, such as the Call of Duty and Grand Theft Auto (GTA) franchises.
+- **The Resilience of Role-Playing Games (RPGs):** Despite not taking the top spot, the RPG genre remains strong in fourth place with 103.71 million copies sold. This demonstrates that iconic franchises like Pokémon and Final Fantasy enjoy massive brand recognition and fame in this part of the world, successfully captivating a critical mass of loyal consumers.
+
+> 🔍 **Analysis of Market Barriers and Economic Impact:**
+⚠️ **The Economic Hurdle in Sales Figures:** When analyzing why the RPG genre does not reflect even higher numbers in the region, very specific commercial and economic factors come into play:
+> 
+- **Rigid Pricing Strategy (Nintendo):** Key franchises like Pokémon belong to the Nintendo ecosystem, a company known for maintaining extremely strict pricing policies. Its titles rarely depreciate or drop in price over time, and the exclusivity of its hardware limits accessibility.
+- **Grey Market and Emulation:** The high cost of original games, combined with regional socioeconomic factors, acts as a major barrier to legal consumption. This drives a large portion of the gaming community to opt for unofficial alternative methods (such as emulators and ROM downloads).
+  ---
+  ### 🌟 Quality vs. Commercial Success
+
+*Which games earned the highest critic scores, and what design choices explain their acclaim beyond sales?*
+<img width="1337" height="716" alt="7" src="https://github.com/user-attachments/assets/98649161-0741-4358-92f5-599dda8c0849" />
+### **Key Insights:**
+
+- **The Value of Immersion and Narrative Excellence (RDR2 at the Top):** With a near-perfect score of 9.8, Red Dead Redemption 2 tops the charts. The qualitative analysis behind this data shows that critics reward games that achieve a deep emotional connection through a solid story and the evolution of characters with whom the player empathizes (such as Arthur Morgan’s redemption). This is complemented by a massive map focused on ultra-realism, obsessive attention to detail, organic side missions, and an immersive soundtrack that maximizes the experience.
+- **The Balance Between Depth and Replayability (The Case of GTA V):** Grand Theft Auto V (9.7) ranks second. Although the general consumer perception is that its narrative lacks the dramatic depth of RDR2, the title compensates and secures its high rating thanks to an extremely versatile map design, exceptionally high replayability through dynamic character switching, and a massive sandbox of vehicles and weapons that keeps it relevant and beloved by the public.
+- **Quality Metrics vs. Simple Game Loops:** A critical finding when examining the Top list is the absence from the top ranks of simple combat genres (such as Mortal Kombat) or recurring shooter installments (such as most of the Call of Duty series, with historical exceptions like Modern Warfare at 9.6). This demonstrates that a high critical score does not define a game that you simply “play to pass the time,” but rather projects that prioritize strong mechanics, attention to detail, and interactive worlds.
+
+> 🔍 **Business Conclusion:**
+💡 The Cultural Connection to Role-Playing: This critical trend toward complex narratives and detailed worlds perfectly explains why, culturally speaking in regions like Japan, role-playing (RPG) genres naturally dominate. The critical and analytical consumer seeks experiences where decisions, stories, and deep gameplay sustain the product over the long term, rather than relying solely on fleeting trends in fast-paced gaming.
+>
