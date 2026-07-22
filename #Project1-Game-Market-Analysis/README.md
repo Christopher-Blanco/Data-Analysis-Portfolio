@@ -132,8 +132,8 @@ This analysis identifies the market leaders and validates the findings of the ge
 - **The Impact of Data Fragmentation (EA vs. EA Sports):** A critical finding in the data structure is the separation of *Electronic Arts* and *EA Sports* (165.84M) as independent entities. From a business perspective, if we consolidate both brands under EA’s corporate umbrella, their combined sales volume would total **496.57M**, positioning the company as the undisputed global market leader by a wide margin.
 - **Quality and Longevity Over Quantity (Rockstar Games):** Ranked third with 190.27M, **Rockstar Games** demonstrates a strategy that runs counter to annualization. Its model is based on releasing massive content titles with hundreds of hours of gameplay (*Grand Theft Auto*, *Red Dead Redemption*) and extending their commercial lifecycle across multiple console generations through remasters and ongoing support for their online modes.
 - **Regional Diversity and Established Niches:** The Top 10 also highlights the strong presence of traditional Asian giants such as **Konami** (90.01M) and **Capcom** (89.18M), which have maintained their global relevance over the decades by preserving and modernizing historic franchises.
+- ---
 ### 🎮 Analysis of Global Software Sales by Console
----
 *Which consoles led software sales, and what business factors explain the ranking?*
 <img width="1339" height="716" alt="3" src="https://github.com/user-attachments/assets/e03d64c3-9476-4c33-a99b-6cf33589cec3" />
 ## **Key Insights and Business Findings:**
@@ -146,7 +146,8 @@ The PlayStation Phenomenon in the Americas: The data reflects the enormous brand
 
 ⚠️ Software vs. Hardware: A highly interesting finding in this query is the position of the PS2 (371.6 million games). Historically, the PS2 is the best-selling console of all time in terms of hardware (physical consoles). However, when analyzing only sales of original games, it falls to fourth place behind the PS3, X360, and PS4.
 
-This phenomenon can be directly attributed to external market factors at the time, primarily the high rates of piracy the platform suffered globally. Despite millions of active consoles in households, a massive portion of software consumption was not recorded in official legal sales metrics.
+“This phenomenon can be directly attributed to external market factors at the time, primarily the high rates of piracy the platform suffered globally. Despite millions of active consoles in households, a massive portion of software consumption was not recorded in official legal sales metrics.
+“This phenomenon can be directly attributed to external market factors at the time, primarily the high rates of piracy the platform suffered globally. Despite millions of active consoles in households, a massive portion of software consumption was not recorded in official legal sales metrics.”
  ---
  ### 🕹️ Top 10 Best-Selling Video Games (By Platform)
 
