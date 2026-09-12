@@ -1,7 +1,7 @@
 -- ==============================================================================
 -- PROJECT: Global Video Game Market Analysis (1980-2020)
 -- CORE ANALYTICAL QUERIES (MySQL)
--- Developer: Christopher Blanco
+-- AUTHOR: Christopher Blanco
 -- ==============================================================================
 
 USE video_game_analysis;
