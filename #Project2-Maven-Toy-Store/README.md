@@ -98,3 +98,53 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
+
+## Business Analysis
+
+The analysis focuses on four key business questions related to website growth, conversion performance, marketing acquisition, and revenue efficiency.
+
+### 1. Website Sessions & Order Volume Trend
+
+**Business Question:**  
+How have website sessions and order volume evolved over time?
+
+To evaluate overall business growth, website sessions and completed orders were aggregated by month. Monthly session volume was calculated from the `website_sessions` table, while order volume was calculated from the `orders` table.
+
+```sql
+WITH monthly_sessions AS (
+    SELECT
+        DATE_FORMAT(created_at, '%Y-%m') AS month,
+        COUNT(*) AS sessions
+    FROM website_sessions
+    GROUP BY DATE_FORMAT(created_at, '%Y-%m')
+),
+
+monthly_orders AS (
+    SELECT
+        DATE_FORMAT(created_at, '%Y-%m') AS month,
+        COUNT(*) AS orders
+    FROM orders
+    GROUP BY DATE_FORMAT(created_at, '%Y-%m')
+)
+
+SELECT
+    s.month,
+    s.sessions,
+    COALESCE(o.orders, 0) AS orders
+FROM monthly_sessions s
+LEFT JOIN monthly_orders o
+    ON s.month = o.month
+ORDER BY s.month;
+```
+
+#### Key Findings
+
+Website traffic and order volume showed a clear overall growth trend throughout the analysis period.
+
+In 2012, monthly website traffic was relatively low, with **3,734 sessions and 99 orders in April**. By late 2014, the business had grown substantially. For example, **December 2014 recorded 29,722 sessions and 2,314 orders**.
+
+The results also show noticeable increases in traffic and orders toward the end of several years, suggesting possible seasonal demand or increased marketing activity during those periods.
+
+Overall, the company experienced significant growth in both website traffic and completed purchases between 2012 and 2015.
+
+> **Note:** March 2012 and March 2015 contain partial-month data because the dataset begins on March 19, 2012 and ends on March 19, 2015.
