@@ -98,6 +98,7 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
+```
 
 ## Business Analysis
 
@@ -148,3 +149,231 @@ The results also show noticeable increases in traffic and orders toward the end 
 Overall, the company experienced significant growth in both website traffic and completed purchases between 2012 and 2015.
 
 > **Note:** March 2012 and March 2015 contain partial-month data because the dataset begins on March 19, 2012 and ends on March 19, 2015.
+
+### 2. Session-to-Order Conversion Rate
+
+**Business Question:**  
+What is the session-to-order conversion rate, and how has it changed over time?
+
+The conversion rate measures the percentage of website sessions that resulted in a completed order.
+
+The metric was calculated as:
+
+`Conversion Rate = Orders / Sessions × 100`
+
+```sql
+WITH monthly_sessions AS (
+    SELECT
+        DATE_FORMAT(created_at, '%Y-%m') AS month,
+        COUNT(*) AS sessions
+    FROM website_sessions
+    GROUP BY DATE_FORMAT(created_at, '%Y-%m')
+),
+
+monthly_orders AS (
+    SELECT
+        DATE_FORMAT(created_at, '%Y-%m') AS month,
+        COUNT(*) AS orders
+    FROM orders
+    GROUP BY DATE_FORMAT(created_at, '%Y-%m')
+)
+
+SELECT
+    s.month,
+    s.sessions,
+    o.orders,
+    ROUND((o.orders / s.sessions) * 100, 2) AS conversion_rate
+FROM monthly_sessions s
+LEFT JOIN monthly_orders o
+    ON s.month = o.month
+ORDER BY s.month;
+```
+
+#### Key Findings
+
+The session-to-order conversion rate showed a strong overall improvement during the analysis period.
+
+In early 2012, monthly conversion rates were generally around **3% to 4%**. By 2013, the rate had increased to approximately **6% to 7%**, and by early 2015 it exceeded **8%**.
+
+For example, the conversion rate increased from **2.65% in April *2012* to **8.70% in February 2015**.
+
+Although there were month-to-month fluctuations, the long-term trend indicates that the website became significantly more effective at converting traffic into completed purchases.
+
+This suggests that business growth was not driven only by increased website traffic; the quality and effectiveness of the customer journey also improved over time.
+
+### 3. Marketing Channel Performance
+
+**Business Question:**  
+Which marketing channels generated the most website traffic?
+
+Website sessions were grouped by acquisition channel using the `utm_source` and `http_referer` fields. Sessions with no UTM source were classified as direct or organic traffic based on the referring website.
+
+```sql
+SELECT
+    CASE
+        WHEN utm_source = 'gsearch' THEN 'Paid Search - gsearch'
+        WHEN utm_source = 'bsearch' THEN 'Paid Search - bsearch'
+        WHEN utm_source = 'socialbook' THEN 'Social'
+        WHEN utm_source IS NULL
+             AND http_referer = 'https://www.gsearch.com'
+            THEN 'Organic Search - gsearch'
+        WHEN utm_source IS NULL
+             AND http_referer = 'https://www.bsearch.com'
+            THEN 'Organic Search - bsearch'
+        WHEN utm_source IS NULL
+             AND http_referer IS NULL
+            THEN 'Direct'
+        ELSE 'Other'
+    END AS channel,
+    COUNT(*) AS sessions
+FROM website_sessions
+GROUP BY channel
+ORDER BY sessions DESC;
+```
+
+#### Key Findings
+
+Paid search was the dominant source of website traffic.
+
+**Paid Search - gsearch** generated **316,035 sessions**, representing roughly **66.8% of all website sessions** during the analysis period.
+
+The remaining channels contributed significantly less traffic:
+
+- Paid Search - bsearch: **62,823 sessions**
+- Direct: **39,917 sessions**
+- Organic Search - gsearch: **35,202 sessions**
+- Social: **10,685 sessions**
+- Organic Search - bsearch: **8,209 sessions**
+
+The results show that Maven Fuzzy Factory relied heavily on paid search, particularly gsearch, as its primary traffic acquisition channel.
+
+This concentration suggests that paid search played a central role in the company's growth strategy, while direct, organic, and social traffic represented a much smaller share of total website sessions.
+
+### 4. Revenue per Order & Revenue per Session
+
+**Business Question:**  
+How has revenue per order evolved over time, and how much revenue is generated per website session?
+
+Revenue per order measures the average value of each completed transaction, while revenue per session measures how much revenue is generated, on average, from each website visit.
+
+#### Revenue per Order
+
+```sql
+SELECT
+    DATE_FORMAT(created_at, '%Y-%m') AS month,
+    COUNT(*) AS orders,
+    ROUND(SUM(price_usd), 2) AS total_revenue,
+    ROUND(AVG(price_usd), 2) AS revenue_per_order
+FROM orders
+GROUP BY DATE_FORMAT(created_at, '%Y-%m')
+ORDER BY month;
+```
+
+#### Revenue per Session
+
+```sql
+WITH monthly_sessions AS (
+    SELECT
+        DATE_FORMAT(created_at, '%Y-%m') AS month,
+        COUNT(*) AS sessions
+    FROM website_sessions
+    GROUP BY DATE_FORMAT(created_at, '%Y-%m')
+),
+
+monthly_revenue AS (
+    SELECT
+        DATE_FORMAT(created_at, '%Y-%m') AS month,
+        SUM(price_usd) AS total_revenue
+    FROM orders
+    GROUP BY DATE_FORMAT(created_at, '%Y-%m')
+)
+
+SELECT
+    s.month,
+    s.sessions,
+    ROUND(COALESCE(r.total_revenue, 0), 2) AS total_revenue,
+    ROUND(
+        COALESCE(r.total_revenue, 0) / s.sessions,
+        2
+    ) AS revenue_per_session
+FROM monthly_sessions s
+LEFT JOIN monthly_revenue r
+    ON s.month = r.month
+ORDER BY s.month;
+```
+
+#### Key Findings
+
+Revenue per order increased steadily over the analysis period.
+
+In 2012, average revenue per order was approximately **$49.99**, reflecting a period when the business had a smaller product catalog. By 2014 and early 2015, average revenue per order had increased to roughly **$63–$65**.
+
+This increase likely reflects the expansion of the product catalog and the growing presence of multi-item orders.
+
+Revenue per session also showed strong growth. In early 2012, each website session generated roughly **$1–$2 in revenue**, while by early 2015 this had increased to more than **$5 per session**.
+
+For example, revenue per session reached approximately **$5.43 in February 2015**.
+
+This improvement was driven by two factors working together:
+
+- A higher session-to-order conversion rate
+- A higher average revenue per order
+
+As a result, website traffic became significantly more valuable over time.
+
+## Key Findings
+
+- **Website traffic and order volume grew substantially over time.** Monthly sessions increased from fewer than 4,000 in early 2012 to nearly 30,000 by late 2014, while monthly orders grew from fewer than 100 to more than 2,000.
+
+- **The website became significantly more effective at converting visitors into customers.** The session-to-order conversion rate increased from roughly **3% in early 2012** to more than **8% by early 2015**.
+
+- **Paid search was the primary traffic acquisition channel.** Paid Search through `gsearch` generated **316,035 sessions**, accounting for approximately **66.8% of all website traffic**.
+
+- **Average revenue per order increased as the business matured.** Revenue per order grew from approximately **$49.99 in 2012** to around **$63–$65 by 2014–2015**, likely supported by product expansion and multi-item purchases.
+
+- **Website traffic became much more valuable over time.** Revenue per session increased from roughly **$1–$2 in 2012** to more than **$5 by early 2015**, driven by both stronger conversion rates and higher order values.
+
+- Overall, Maven Fuzzy Factory demonstrated growth not only in traffic and sales volume, but also in **conversion efficiency and revenue generation per visitor**.
+
+## Tools & Skills Used
+
+### Tools
+
+- **MySQL / MySQL Workbench** — Database creation, data validation, SQL analysis, joins, aggregations, and KPI calculations
+- **GitHub** — Project documentation and portfolio presentation
+- **CSV / Maven Analytics Dataset** — Source data and data dictionary
+
+### SQL Skills Demonstrated
+
+- Data validation and quality checks
+- `JOIN` operations
+- Common Table Expressions (`CTEs`)
+- `CASE` statements
+- `GROUP BY` and aggregations
+- `COUNT`, `SUM`, and `AVG`
+- `DATE_FORMAT` for time-based analysis
+- `COALESCE` for handling missing values
+- Conversion rate calculations
+- Revenue and traffic KPI analysis
+- Working with relational data at different levels of granularity
+
+### Analytical Skills Demonstrated
+
+- Understanding database relationships and row granularity
+- Translating business questions into SQL queries
+- E-commerce performance analysis
+- Marketing channel analysis
+- Conversion funnel reasoning
+- Trend analysis
+- Data quality validation
+- Interpreting results and communicating business insights
+
+## Conclusion
+
+This project provided a technical analysis of Maven Fuzzy Factory's e-commerce performance using SQL.
+
+The analysis showed that the company experienced strong growth between 2012 and 2015, with increasing website traffic, order volume, conversion rates, and revenue efficiency. Paid search, particularly gsearch, was the primary source of website traffic, while improvements in both conversion rate and average order value made each website session increasingly valuable over time.
+
+Beyond answering the main business questions, the project also involved validating the database structure, identifying data import issues, and working with multiple related tables at different levels of granularity.
+
+Overall, this project strengthened my ability to use SQL not only to query data, but also to understand a relational database, validate data quality, calculate business KPIs, and translate results into actionable insights.
