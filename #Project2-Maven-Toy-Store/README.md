@@ -54,3 +54,47 @@ The database structure follows the customer journey from website acquisition to 
 `Website Session → Pageviews → Order → Order Items → Refund`
 
 The `products` table acts as a reference table for identifying the products associated with each order item.
+
+## Data Preparation & Validation
+
+Before starting the business analysis, the dataset was reviewed to verify that the imported tables matched the original CSV files and that the data was complete and usable.
+
+Several validation steps were performed:
+
+- Compared the imported MySQL tables against the original CSV files and the Maven Fuzzy Factory data dictionary.
+- Identified that the original `orders` table had been created without the `user_id` column, which caused several fields to shift into the wrong columns during import.
+- Recreated the `orders` table with the correct structure and re-imported the source data.
+- Detected that `website_sessions` had only partially imported, containing just 601 rows instead of the full dataset.
+- Re-imported `website_sessions` using `LOAD DATA LOCAL INFILE`, successfully loading **472,871 rows** with no skipped records or warnings.
+- Corrected `website_sessions.created_at` from `TEXT` to `DATETIME` to support time-based analysis.
+- Verified row counts, date ranges, distinct identifiers, and table relationships before beginning the analysis.
+- Checked that all **32,313 orders** were represented in `order_items`.
+- Confirmed that all **1,188,124 website pageview IDs** were unique.
+- Confirmed that the website session and pageview data both covered the same analysis period from **March 2012 to March 2015**.
+
+These checks helped ensure that the analysis was performed on a complete and correctly structured dataset.
+
+### Validation Summary
+
+| Validation Check | Result |
+|---|---|
+| Website sessions imported | 472,871 |
+| Website pageviews imported | 1,188,124 |
+| Orders imported | 32,313 |
+| Orders represented in `order_items` | 32,313 |
+| Unique pageview IDs | 1,188,124 |
+| Distinct products | 4 |
+| Analysis period | March 2012 – March 2015 |
+
+### Large CSV Import
+
+Because MySQL Workbench's Table Data Import Wizard struggled with the larger `website_sessions.csv` file, the dataset was imported using `LOAD DATA LOCAL INFILE`, which provided a faster and more reliable import process.
+
+```sql
+LOAD DATA LOCAL INFILE
+'C:/path/to/website_sessions.csv'
+INTO TABLE website_sessions
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
