@@ -340,6 +340,12 @@ As a result, website traffic became significantly more valuable over time.
 
 - Overall, Maven Fuzzy Factory demonstrated growth not only in traffic and sales volume, but also in **conversion efficiency and revenue generation per visitor**.
 
+### SQL Analysis
+
+The complete SQL analysis used in this project is available here:
+
+[`maven_fuzzy_factory_analysis.sql`](./maven_fuzzy_factory_analysis.sql)
+
 ## Tools & Skills Used
 
 ### Tools
