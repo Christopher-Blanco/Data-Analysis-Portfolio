@@ -15,6 +15,10 @@ The analysis focuses on four main business questions:
 
 Before performing the analysis, the dataset was reviewed and validated to ensure that the tables, data types, date ranges, and relationships between tables were correctly structured.
 
+### Data Source
+
+The dataset used in this project was provided by **Maven Analytics** as part of the **Maven Fuzzy Factory** e-commerce dataset. It includes website sessions, pageviews, orders, products, order items, and refunds covering the period from **March 2012 to March 2015**.
+
 ## Dataset & Database Structure
 
 The dataset contains e-commerce, website traffic, product, and refund data from **March 2012 to March 2015**. It is organized into six relational tables that represent different stages of the customer journey, from visiting the website to completing an order and potentially requesting a refund.
