@@ -326,6 +326,12 @@ This improvement was driven by two factors working together:
 
 As a result, website traffic became significantly more valuable over time.
 
+### SQL Analysis
+
+The complete SQL analysis used in this project is available here:
+
+[`maven_fuzzy_factory_analysis.sql`](./maven_fuzzy_factory_analysis.sql)
+
 ## Key Findings
 
 - **Website traffic and order volume grew substantially over time.** Monthly sessions increased from fewer than 4,000 in early 2012 to nearly 30,000 by late 2014, while monthly orders grew from fewer than 100 to more than 2,000.
@@ -339,12 +345,6 @@ As a result, website traffic became significantly more valuable over time.
 - **Website traffic became much more valuable over time.** Revenue per session increased from roughly **$1–$2 in 2012** to more than **$5 by early 2015**, driven by both stronger conversion rates and higher order values.
 
 - Overall, Maven Fuzzy Factory demonstrated growth not only in traffic and sales volume, but also in **conversion efficiency and revenue generation per visitor**.
-
-### SQL Analysis
-
-The complete SQL analysis used in this project is available here:
-
-[`maven_fuzzy_factory_analysis.sql`](./maven_fuzzy_factory_analysis.sql)
 
 ## Tools & Skills Used
 
