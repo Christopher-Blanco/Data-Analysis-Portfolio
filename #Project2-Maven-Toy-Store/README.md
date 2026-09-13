@@ -18,6 +18,7 @@ Before performing the analysis, the dataset was reviewed and validated to ensure
 ### Data Source
 
 The dataset used in this project was provided by **Maven Analytics** as part of the **Maven Fuzzy Factory** e-commerce dataset. It includes website sessions, pageviews, orders, products, order items, and refunds covering the period from **March 2012 to March 2015**.
+The original dataset and data dictionary were used as the reference for validating the database structure before analysis.
 
 ## Dataset & Database Structure
 
