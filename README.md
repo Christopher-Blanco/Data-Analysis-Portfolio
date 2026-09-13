@@ -16,6 +16,6 @@ Each project is designed to demonstrate technical skills in solving real-world p
 
 ## 📂 My Projects
 
-### 🎮 [Project 1: Video Game Dashboard](./%23Project1-Game-Market-Analysis/)
+### 🎮 [Project 1: Video Game Industry Market Analysis](./Project-01-Game-Market-Analysis/README.md)
 * **Description:** Analysis focused on evaluating sales and performance.
 * **Tools:** SQL, Power BI, Excel, Python.
