@@ -19,3 +19,7 @@ Each project is designed to demonstrate technical skills in solving real-world p
 ### 🎮 [Project 1: Video Game Industry Market Analysis](./Project-01-Game-Market-Analysis/README.md)
 * **Description:** Analysis focused on evaluating sales and performance.
 * **Tools:** SQL, Power BI, Excel, Python.
+
+### 🧸 [Project 2: Maven Fuzzy Factory E-Commerce Analysis](./Project-02-Maven-Fuzzy-Factory/README.md)
+- **Description:** E-commerce analysis focused on website growth, conversion performance, marketing channels, and revenue efficiency.
+- **Tools:** MySQL, MySQL Workbench, GitHub.
