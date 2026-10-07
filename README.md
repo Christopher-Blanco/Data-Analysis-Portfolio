@@ -24,8 +24,6 @@ Each project is designed to demonstrate technical skills in solving real-world p
 - **Description:** E-commerce analysis focused on website growth, conversion performance, marketing channels, and revenue efficiency.
 - **Tools:** MySQL, MySQL Workbench, GitHub.
 
-### [Project 03 — Telco Customer Churn Analysis](./Project-03-Telco-Customer-Churn/)
-
-Analyzed 7,043 customers using Python, MySQL, and Power BI. Identified a segment representing 13.01% of customers and 34.40% of all churned customers, and proposed retention experiments.
-
-**Tools:** Python · pandas · matplotlib · MySQL · Power BI
+### 📡 [Project 3: Telco Customer Churn Analysis](./Project-03-Telco-Customer-Churn/)
+- **Description:** Customer churn analysis focused on contract types, customer tenure, and priority segments for retention initiatives.
+- **Tools:** Python, pandas, matplotlib, MySQL, Power BI.
