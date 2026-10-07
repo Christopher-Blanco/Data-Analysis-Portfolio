@@ -23,3 +23,9 @@ Each project is designed to demonstrate technical skills in solving real-world p
 ### 🧸 [Project 2: Maven Fuzzy Factory E-Commerce Analysis](./Project-02-Maven-Fuzzy-Factory/README.md)
 - **Description:** E-commerce analysis focused on website growth, conversion performance, marketing channels, and revenue efficiency.
 - **Tools:** MySQL, MySQL Workbench, GitHub.
+
+### [Project 03 — Telco Customer Churn Analysis](./Project-03-Telco-Customer-Churn/)
+
+Analyzed 7,043 customers using Python, MySQL, and Power BI. Identified a segment representing 13.01% of customers and 34.40% of all churned customers, and proposed retention experiments.
+
+**Tools:** Python · pandas · matplotlib · MySQL · Power BI
